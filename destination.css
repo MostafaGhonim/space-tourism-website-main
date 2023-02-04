@@ -1,0 +1,203 @@
+body{
+    position: relative;
+    background-image: url(assets/destination/background-destination-desktop.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+body::before{
+    height: calc(100% + 101px);
+}
+.titledes{
+    display: flex;
+    flex-direction: column;
+justify-content: space-around;
+height: 100%;
+}
+
+.title p{
+font-family: 'Barlow Condensed';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 34px;
+/* identical to box height */
+letter-spacing: 4.725px;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+@media(max-width:991px){
+    body{
+        background-image: url(assets/destination/background-destination-tablet.jpg);
+    }
+    .titledes{
+        width: 100%;
+        justify-content: space-around;
+        height: 50%;
+    }
+    .titledes .boxPlant{
+        display: flex;
+        justify-content: center;
+        min-height: 80%;
+        width: 100%;
+    }
+}
+.title p span{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 34px;
+    /* identical to box height */
+    letter-spacing: 4.725px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+}
+.title img{
+    width: 400px;
+}
+@media (max-width:520px){
+    .titledes{
+        justify-content: space-evenly;
+    }
+    body{
+        background-image: url(assets/destination/background-destination-mobile.jpg);
+    }
+    .title img{
+        height: 95%;
+    }
+    .title p {
+        margin: 0px;
+        font-size: 10px;
+    }
+    header{
+        height: 10%;
+    }
+    .title p span{
+        font-size: 10px;
+    }
+}
+.infoPlant{
+    width: 35%;
+}
+
+.infoPlant .links{
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.infoPlant .links li{
+    cursor: pointer;
+}
+
+.infoPlant .links .choice::before{
+    bottom: -5px;
+}
+.infoPlant .aboutPlant h3{
+margin-top: 5px;
+font-family: 'Bellefair';
+font-style: normal;
+font-weight: 400;
+font-size: 80px;
+line-height: 115px;
+/* identical to box height */
+color: #FFFFFF;
+}
+
+@media (max-width:991px){
+    .infoPlant{
+        width: 80%;
+        text-align: center;
+        height: 50%;
+    }
+    .infoPlant .links{
+        width: 70%;
+        margin: 20px 0px;
+        justify-content: space-around;
+    }
+
+}
+@media (max-width:520px){
+    .infoPlant{
+        width: 100%;
+    }
+    .infoPlant .links{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .infoPlant .aboutPlant h3{
+        margin-top: 0px;
+        font-size: 60px;
+        line-height: 75px;
+    }
+    .title img{
+        width: 200px;
+    }
+}
+.infoPlant .aboutPlant .descraptionPlant{
+position: relative;
+font-family: 'Barlow';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 20px;
+/* or 178% */
+color: #D0D6F9;
+}
+.infoPlant .aboutPlant hr{
+    margin-top: 40px;
+    border: 0.01px solid #383B4B;
+}
+.infoPlant .aboutPlant .btmBox{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.infoPlant .aboutPlant .btmBox p{
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 32px;
+    /* identical to box height */
+    
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+    }
+    @media (max-width:991px){
+        .infoPlant .aboutPlant .btmBox{
+            justify-content: space-around;
+        }
+    }
+.infoPlant .aboutPlant .btmBox span{
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 17px;
+    /* identical to box height */
+    letter-spacing: 2.3625px;
+    text-transform: uppercase;    
+    display: block;
+}
+
+@media(max-width:520px){
+    .infoPlant .aboutPlant .descraptionPlant{
+        font-size: 14px;
+    }
+    .infoPlant .aboutPlant hr{
+        margin-top: 10px;
+    }
+    .infoPlant .links li{
+        font-size: 15px;
+    }
+    .infoPlant .aboutPlant .btmBox{
+        margin-top: 0px;
+        flex-direction: column;
+    }
+    .infoPlant .aboutPlant .btmBox p {
+        margin: 10px 0px;
+    }
+    .title img{
+        min-width: 80%;
+    }
+}
