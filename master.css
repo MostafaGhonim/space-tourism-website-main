@@ -12,7 +12,7 @@ body{
     background-repeat:no-repeat;
     background-size: cover;
     height: 100vh;
-    padding-top: 20px;
+    padding-top: 10px;
     }
     :root{
         --show: 0%;
@@ -26,22 +26,22 @@ width: var(--show);
 height: 100%;
 top: 0;
 right: 0;
+-webkit-backdrop-filter:blur(40.7742px) ;
 backdrop-filter: blur(40.7742px);
 z-index: 2;
 transition: 0.3s;
 }
 .attribution{
     position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    align-items: center;
+    bottom: 3px;
+    width: 100%;
+    font-size: 11px;
+    text-align: center;
 }
 .attribution span{
     color: red;
-    font-size: 20px;
-    padding-left: 5px;
+    font-size: 12px;
+
 }
 li{
     list-style: none;
@@ -148,7 +148,7 @@ main{
     height: 90%;
 }
 main .conterner{
-height: 100%;
+height: 95%;
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -169,7 +169,7 @@ align-items: center;
     }
     main .conterner{
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-evenly;
         }
         .links{
             justify-content: space-evenly;
@@ -178,6 +178,7 @@ align-items: center;
 @media(max-width:520px){
     body{
         background-image: url(assets/home/background-home-mobile.jpg);
+        padding-top: 0px;
     }
     header .conterner .icon{
         width: 30px;
@@ -283,12 +284,13 @@ main .conterner .text p{
 
 main .conterner .explore{
     background-color: white;
-    width: 180px;
-    height: 30%;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 main .conterner .explore a{
     text-transform: uppercase   ;
@@ -297,14 +299,8 @@ main .conterner .explore a{
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
-    line-height: 37px;
     letter-spacing: 2px;
     color: #0B0D17;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 main .conterner .explore:hover{
     box-shadow: 0px 0px 0px 50px #ffffff8e;
