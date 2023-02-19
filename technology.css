@@ -132,6 +132,12 @@ align-content: center;
 justify-content: center;
 flex-wrap: wrap;
 }
+    @media(min-width:992px){
+        main .titleTec {
+            justify-content: flex-start;
+            padding-left: 50px;
+        }
+    }
 main .titleTec span{
     font-family: 'Barlow Condensed';
     font-style: normal;

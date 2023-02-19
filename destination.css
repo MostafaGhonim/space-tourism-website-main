@@ -67,6 +67,7 @@ color: #FFFFFF;
     .title p {
         margin: 0px;
         font-size: 10px;
+        text-align: center;
     }
     header{
         height: 10%;
