@@ -27,7 +27,7 @@ fetch('./data.json').then((e) => {
                     if (e.target.id === `dot1`) {
                         photoCrew.style.width = '350px'
                     } else {
-                        photoCrew.style.width = '360px'
+                        photoCrew.style.width = '350px'
                     }
                     titlePosation.innerHTML = crewInformation[i]["role"];
                     namePerson.innerHTML = crewInformation[i]["name"];
