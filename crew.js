@@ -22,10 +22,9 @@ fetch('./data.json').then((e) => {
 }).then((crewInformation) => {
     dots.forEach((e) => {
         e.addEventListener("click", function (e) {
-            for (let i = 0; i < crewInformation.length; i++){
+            for (let i = 0; i < crewInformation.length; i++) {
                 if (e.target.id === `dot${i}`) {
-                        photoCrew.style.width = '350px'
-                    }
+                    photoCrew.style.width = '350px'
                     titlePosation.innerHTML = crewInformation[i]["role"];
                     namePerson.innerHTML = crewInformation[i]["name"];
                     bio.innerHTML = crewInformation[i]["bio"];
