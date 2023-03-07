@@ -66,6 +66,7 @@ color: #FFFFFF;
     }
     .title p {
         margin: 0px;
+        margin-bottom:15px;
         font-size: 10px;
         text-align: center;
     }
