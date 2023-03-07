@@ -25,12 +25,7 @@ fetch('./data.json').then((e) => {
                 if (e.target.id === data[i]["name"]) {
                     nameProject.innerHTML = data[i]["name"];
                     infoProject.innerHTML = data[i]["description"]
-                    if (window.innerWidth < 991) {
-                        picProcject.setAttribute('src', data[i]["images"].landscape)
-                    } else {
                         picProcject.setAttribute('src', data[i]["images"].portrait)
-                    }
-                        
                 }
             }
         })
