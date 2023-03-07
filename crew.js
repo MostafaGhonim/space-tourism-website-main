@@ -24,9 +24,6 @@ fetch('./data.json').then((e) => {
         e.addEventListener("click", function (e) {
             for (let i = 0; i < crewInformation.length; i++){
                 if (e.target.id === `dot${i}`) {
-                    if (e.target.id === `dot1`) {
-                        photoCrew.style.width = '350px'
-                    } else {
                         photoCrew.style.width = '350px'
                     }
                     titlePosation.innerHTML = crewInformation[i]["role"];
